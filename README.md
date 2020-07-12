@@ -14,4 +14,6 @@ INSTRUCTIONS:
 - To make deploy environment *dev* execute command: sudo npm run start:dev
 - To make deploy environment *prod* execute command: sudo npm run start:prod
 
-
+Architecture:
+==============
+![project's architecture](/documents/architecture.png?raw=true "Project's architecture")

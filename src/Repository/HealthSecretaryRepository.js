@@ -13,7 +13,7 @@ class HealthSecretaryRepository {
 
     getStatusCovid() {
         return new Promise((resolve, reject) => {
-            request("http://datasets.saude.go.gov.br/coronavirus/casos_obitos_municipio.csv")
+            request(process.env.URL_CSV_HEALTH_SECRETARY)
             .pipe(this._writeStream)
             .on('finish', () => {
                 const datas = csv.getJsonFromCsv(this._pathCsv);
