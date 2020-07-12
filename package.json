@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "sudo serverless deploy -v ",
+    "start:prod": "sudo serverless deploy -v --stage prod "
   },
   "keywords": [],
   "author": "",

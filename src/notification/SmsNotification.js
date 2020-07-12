@@ -17,12 +17,11 @@ class SmsNotification extends Notification {
             if (subscribesNotifySpecificCity && subscribesNotifySpecificCity.Items) {
                 for (let indice2 = 0; indice2 < subscribesNotifySpecificCity.Items.length; indice2++) {
                     const item = subscribesNotifySpecificCity.Items[indice2];
-                    
                     await this._httpClient.post(
                         process.env.ENDPOINT_SMS_TOTAL_VOICE, 
                         {
-                            "numero_destino": item.whasapp,
-                            "mensagem": `Case confirmated: ${message.casos_confirmados}. Deaths confirmated: ${message.obitos_confirmados}`
+                            "numero_destino": item.whatsapp,
+                            "mensagem": `Case confirmated: ${message.casos_confirmados} .Deaths confirmated: ${message.obitos_confirmados}`
                         },
                         { "Access-Token": process.env.ACCESS_TOKEN }
                     );
