@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.713.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "convert-csv-to-json": "0.0.15",
     "nodemailer": "^6.4.10",
     "request": "^2.88.2",
